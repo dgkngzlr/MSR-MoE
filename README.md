@@ -54,10 +54,11 @@ Results are reported in mIoU. See the paper for full tables, per-class IoU and c
 
 | Dataset | mIoU (%) | Config | Weights |
 |---|---|---|---|
+| SemanticRT | 79.69 | [semanticrt.yaml](configs/semanticrt.yaml) | [Download](https://drive.google.com/file/d/15rC0FJDmeqD2XAnAfr7k-2MksuFyNrPT/view?usp=sharing) |
+| FMB | 63.19 | [fmb.yaml](configs/fmb.yaml) | [Download](https://drive.google.com/file/d/1nSP7zWUWQPwJNdW-vJ_2Wc08YWSjC1kn/view?usp=sharing) |
 | Caltech RGB-T | 77.19 | [caltech.yaml](configs/caltech.yaml) | [Download](https://PLACEHOLDER/caltech) |
-| SemanticRT | 79.69 | [semanticrt.yaml](configs/semanticrt.yaml) | [Download](https://PLACEHOLDER/semanticrt) |
-| FMB | 63.19 | [fmb.yaml](configs/fmb.yaml) | [Download](https://PLACEHOLDER/fmb) |
-| PST900 | 85.93 | [pst900.yaml](configs/pst900.yaml) | [Download](https://PLACEHOLDER/pst900) |
+| PST900 | 85.93 | [pst900.yaml](configs/pst900.yaml) | [Download](https://drive.google.com/file/d/1GnpvPHOmERFp_vtbAZrpMd4-SZBlP1v_/view?usp=sharing) |
+
 
 
 ## Qualitative Results
