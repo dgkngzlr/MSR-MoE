@@ -1,0 +1,8 @@
+checkpoints/
+wandb/
+__pycache__/
+data/
+.mcp.json
+*.db
+viz/
+outputs/

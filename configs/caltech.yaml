@@ -1,0 +1,33 @@
+general:
+  project: caltech-sweep
+  experiment: caltech-oursnet
+  dataset: caltech
+  logger: wandb
+  seed: 42
+
+model:
+  name: OursNet
+  rgb_ch: 3
+  ir_ch: 3
+  freeze_layer: 0
+
+loss:
+  name: dice_ce_loss
+
+scheduler:
+  name: cosine_with_min_lr_schedule_with_warmup
+  num_warmup_steps: 1500
+  min_lr_rate: 0.1
+
+train:
+  epochs: 120
+  batch_per_device: 1
+  gradient_accumulation_steps: 1
+  lr: 1e-4
+  weight_decay: 1e-2
+  early_stop: 20
+  resume_from: null
+
+test:
+  checkpoint: null
+

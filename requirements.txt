@@ -1,0 +1,26 @@
+# Install PyTorch matching your CUDA version first (https://pytorch.org/get-started/locally/),
+# then: pip install -r requirements.txt
+torch>=2.1
+torchvision>=0.16
+
+# Model / training
+timm>=1.0                         # ConvNeXt-V2 backbone (pretrained weights downloaded on first use)
+accelerate>=0.30                  # single / multi-GPU training
+transformers>=4.41                # LR schedulers (get_cosine_with_min_lr_schedule_with_warmup)
+segmentation-models-pytorch>=0.3  # Dice loss
+evaluate>=0.4                     # mean_iou metric
+datasets                          # required by evaluate
+
+# Data / augmentation
+albumentations>=2.0               # uses the `fill` / `fill_mask` arguments (2.x API)
+opencv-python
+pillow
+numpy
+pyyaml
+
+# Logging / tuning / utilities
+wandb                             # only needed when general.logger: wandb
+optuna                            # sweep.py
+matplotlib                        # visualisation
+tqdm
+fvcore                            # measure_flops.py
